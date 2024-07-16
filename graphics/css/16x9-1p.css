@@ -1,0 +1,111 @@
+/* Names and Pronouns */
+.player-name {
+    color: var(--dark-pink);
+    text-shadow: 3px 3px 0 var(--light-pink);
+
+    position: absolute;
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+
+    margin: auto;
+    text-align: right;
+}
+.player-pronouns {
+    color: var(--medium-blue);
+    font-size: 20px;
+
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+
+    margin: auto;
+    text-align: right;
+}
+.comm-name {
+    color: var(--blue);
+    text-shadow: 3px 3px 0 var(--light-blue);
+    font-size: 40px;
+
+    position: absolute;
+    width: 385px;
+    height: 42px;
+    line-height: 42px;
+
+    margin: auto;
+    text-align: left;
+
+}
+.comm-pronouns {
+    color: var(--medium-blue);
+    font-size: 20px;
+
+    position: absolute;
+    width: 385px;
+    height: 25px;
+    line-height: 25px;
+    
+    margin: auto;
+}
+
+/* Game Information */
+#game-name {
+    color: var(--light-blue);
+    text-shadow: 5px 5px 0 var(--dark-pink);
+    font-size: 75px;
+
+    position: absolute;
+    width: 1000px;
+    height: 80px;
+    line-height: 80px;
+
+    margin: auto;
+}
+#game-secondary-info {
+    color: var(--light-pink);
+    text-shadow: 4px 4px 0 var(--blue);
+    font-size: 40px;
+
+    position: absolute;
+    width: 1000px;
+    height: 45px;
+    line-height: 45px;
+
+    margin: auto;
+    display: flex;
+}
+
+/* Timer */
+#timer {
+    color: var(--blue);
+    text-shadow: 5px 5px 0 var(--dark-pink);
+    font-size: 85px;
+
+    position: absolute;
+    width: 381px;
+    height: 105px;
+    line-height: 105px;
+    left: 1518px;
+    top: 908px;
+
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+#timer-secondary-info {
+    font-size: 30px;
+
+    position: absolute;
+    width: 381px;
+    height: 40px;
+    line-height: 40px;
+    left: 1518px;
+    top: 1013px;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
