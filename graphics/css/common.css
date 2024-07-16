@@ -22,12 +22,44 @@ body {
 /* Fonts */
 .mouse-memoirs-regular {
     font-family: "Mouse Memoirs", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-  }
-  .montserrat-bold {
+}
+.montserrat-bold {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
+}
+
+/* Text Templates */
+.player-name {
+    color: var(--dark-pink);
+    text-shadow: 3px 3px 0 var(--light-pink);
+}
+.comm-name {
+    color: var(--blue);
+    text-shadow: 3px 3px 0 var(--light-blue);
+    font-size: 40px;
+
+    position: absolute;
+    width: 385px;
+    height: 42px;
+    line-height: 42px;
+
+    margin: auto;
+    text-align: left;
+
+}
+.comm-pronouns {
+    color: var(--medium-blue);
+    font-size: 20px;
+
+    position: absolute;
+    width: 385px;
+    height: 25px;
+    line-height: 30px;
+    
+    margin: auto;
+    text-align: right;
+}
