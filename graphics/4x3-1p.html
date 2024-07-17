@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/4x3-1p.css" />
+
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <!-- Background Image -->
+        <img src="./assets/overlays/4x3-1p.png" id="bg" style="position: absolute; left: 0px; top: 0px;">
+
+        <!-- Player Information -->
+         <div id="player-container">
+            <div
+                class="mouse-memoirs-regular player-name"
+                id="player1"
+                style="
+                    position: absolute;
+                    left: 76px;
+                    top: 638px;
+                    font-size: 50px;"
+            >{Player 1}</div>
+            <div
+                class="montserrat-bold player-pronouns"
+                id="player1-pronouns"
+                style="
+                    left: 344px;
+                    top: 638px;
+                    font-size: 30px;"
+            >{THEY/THEM}</div>
+        </div>
+
+        <!-- Commentary Information -->
+        <div class="commentary-container">
+            <div class="mouse-memoirs-regular comm-name" id="comm1" style="left: 68px; top: 767px;">{Commentary 1}</div>
+            <div class="montserrat-bold comm-pronouns" id="comm1-pronouns" style="left: 68px; top: 809px;">{THEY/THEM}</div>
+        </div>
+        <div class="commentary-container">
+            <div class="mouse-memoirs-regular comm-name" id="comm2" style="left: 406px; top: 767px;">{Commentary 2}</div>
+            <div class="montserrat-bold comm-pronouns" id="comm2-pronouns" style="left: 406px; top: 809px;">{THEY/THEM}</div>
+        </div>
+        <div class="commentary-container">
+            <div class="mouse-memoirs-regular comm-name" id="comm3" style="left: 68px; top: 876px;">{Commentary 3}</div>
+            <div class="montserrat-bold comm-pronouns" id="comm3-pronouns" style="left: 68px; top: 918px;">{THEY/THEM}</div>
+        </div>
+        <div class="commentary-container">
+            <div class="mouse-memoirs-regular comm-name" id="host" style="left: 406px; top: 876px;">{Host}</div>
+            <div class="montserrat-bold comm-pronouns" id="host-pronouns" style="left: 406px; top: 918px;">{THEY/THEM}</div>
+        </div>
+
+        <!-- Game Information -->
+        <div class="mouse-memoirs-regular" id="game-name" style="left: 0px; top: 0px;">{GAME NAME}</div>
+        <div id="game-secondary-info" style="left: 0px; top: 175px;">
+            <div class="montserrat-bold" id="game-category">{CATEGORY}</div>
+            <img style="width:50px; height: 30px; padding: 0 10px 0 50px;" src="./assets/icons/controller.png">
+            <div class="montserrat-bold" id="game-platform">{PLATFORM}</div>
+        </div>
+
+        <!-- Timer -->
+        <div class="mouse-memoirs-regular" id="timer">{0:00:00}</div>
+        <div id="timer-secondary-info">
+            <img src="./assets/icons/stopwatch.png">
+            <div class="montserrat-bold" id="game-estimate" style="color: var(--yellow); margin: 0px 10px 0px 10px;">{0:00:00}</div>
+            <div class="montserrat-bold" id="estimate-text" style="color: var(--blue)">ESTIMATE</div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="./js/run-info.js"></script>
+        <script src="./js/timer.js"></script>
+    </body>
+</html>
