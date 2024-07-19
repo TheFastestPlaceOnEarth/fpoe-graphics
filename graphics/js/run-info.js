@@ -24,7 +24,7 @@ $(() => {
 	// This is where the information is received for the run we want to display.
 	// The "change" event is triggered when the current run is changed.
 	var runDataActiveRun = nodecg.Replicant('runDataActiveRun', speedcontrolBundle);
-	runDataActiveRun.on('change', (newVal, oldVal) => {
+	runDataActiveRun.on('change', (newVal) => {
 		if (newVal)
 			updateSceneFields(newVal);
 	});
@@ -44,20 +44,17 @@ $(() => {
 
     // Update commentary
     const commentaryRep = nodecg.Replicant('commentary');
-    commentaryRep.on('change', (newVal, oldVal) => {
-        if (newVal)
-            updateCommentary(newVal);
+    commentaryRep.on('change', (newVal) => {
+        if (newVal) {
+            comm1NameElement.html(newVal.comm1Name);
+            comm1PronounsElement.html(newVal.comm1Pronouns.toUpperCase());
+            comm2NameElement.html(newVal.comm2Name);
+            comm2PronounsElement.html(newVal.comm2Pronouns.toUpperCase());
+            comm3NameElement.html(newVal.comm3Name);
+            comm3PronounsElement.html(newVal.comm3Pronouns.toUpperCase());
+            hostNameElement.html(newVal.hostName);
+            hostPronounsElement.html(newVal.hostPronouns.toUpperCase());
+        }
     });
-
-    function updateCommentary(commentaryData) {
-        comm1NameElement.html(commentaryData.comm1Name);
-        comm1PronounsElement.html(commentaryData.comm1Pronouns.toUpperCase());
-        comm2NameElement.html(commentaryData.comm2Name);
-        comm2PronounsElement.html(commentaryData.comm2Pronouns.toUpperCase());
-        comm3NameElement.html(commentaryData.comm3Name);
-        comm3PronounsElement.html(commentaryData.comm3Pronouns.toUpperCase());
-        hostNameElement.html(commentaryData.hostName);
-        hostPronounsElement.html(commentaryData.hostPronouns.toUpperCase());
-    }
 
 });

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/intermission.css" />
+
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <!-- Background Image -->
+        <img src="./assets/overlays/intermission.png" id="bg" style="position: absolute; left: 0px; top: 0px;">
+
+        <!-- Random Up Next Text -->
+         <div class="montserrat-bold" id="up-next">UP NEXT</div>
+
+        <!-- Up Next Game -->
+        <div class="game-info-container" style="left: 59px; top: 146px;">
+            <div class="mouse-memoirs-regular game-info-game" id="up-next-game">{UP NEXT GAME}</div>
+            <div class="montserrat-bold game-info-category" id="up-next-category">{UP NEXT CATEGORY}</div>
+            <div class="montserrat-bold game-info-estimate" id="up-next-estimate">{UP NEXT ESTIMATE}</div>
+            <div class="mouse-memoirs-regular game-info-runner" id="up-next-runner">{UP NEXT RUNNER}</div>
+            <div class="montserrat-bold game-info-pronouns" id="up-next-pronouns">{UP NEXT PRONOUNS}</div>
+        </div>
+
+        <!-- On Deck Game 1 -->
+        <div class="game-info-container" style="left: 59px; top: 426px;">
+            <div class="mouse-memoirs-regular game-info-game" id="on-deck-game-1">{ON DECK GAME 1}</div>
+            <div class="montserrat-bold game-info-category" id="on-deck-category-1">{ON DECK CATEGORY 1}</div>
+            <div class="montserrat-bold game-info-estimate" id="on-deck-estimate-1">{ON DECK ESTIMATE 1}</div>
+            <div class="mouse-memoirs-regular game-info-runner" id="on-deck-runner-1">{ON DECK RUNNER 1}</div>
+            <div class="montserrat-bold game-info-pronouns" id="on-deck-pronouns-1">{ON DECK PRONOUNS 1}</div>
+        </div>
+
+        <!-- On Deck Game 2 -->
+        <div class="game-info-container" style="left: 59px; top: 706px;">
+            <div class="mouse-memoirs-regular game-info-game" id="on-deck-game-2">{ON DECK GAME 2}</div>
+            <div class="montserrat-bold game-info-category" id="on-deck-category-2">{ON DECK CATEGORY 2}</div>
+            <div class="montserrat-bold game-info-estimate" id="on-deck-estimate-2">{ON DECK ESTIMATE 2}</div>
+            <div class="mouse-memoirs-regular game-info-runner" id="on-deck-runner-2">{ON DECK RUNNER 2}</div>
+            <div class="montserrat-bold game-info-pronouns" id="on-deck-pronouns-2">{ON DECK PRONOUNS 2}</div>
+        </div>
+
+        <!-- Host Container -->
+        <div class="host-container" style="left: 281px; top: 991px">
+            <div class="mouse-memoirs-regular host-name" id="host-name">{HOST NAME}</div>
+            <div class="montserrat-bold host-pronouns" id="host-pronouns">{HOST PRONOUNS}</div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="./js/intermission.js"></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+.game-info-container {
+    position: fixed;
+    width: 915px;
+    height: 216px;
+}
+
+#up-next {
+    font-size: 25px;
+    color: var(--green);
+    text-shadow: 3px 3px 0 var(--dark-blue);
+
+    position: fixed;
+    width: 125px;
+    height: 30px;
+    left: 79px;
+    top: 116px;
+}
+
+.game-info-game {
+    font-size: 60px;
+    color: var(--blue);
+    text-shadow: 3px 3px 0 var(--medium-blue);
+
+    position: absolute;
+    width: 875px;
+    height: 70px;
+    line-height: 70px;
+    left: 20px;
+    top: 20px;
+}
+.game-info-category {
+    font-size: 35px;
+    color: var(--light-pink);
+    text-shadow: 3px 3px 0 var(--blue);
+
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    left: 20px;
+    top: 90px;
+}
+.game-info-estimate {
+    font-size: 30px;
+    color: var(--blue);
+
+    position: absolute;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    left: 20px;
+    top: 165px;
+}
+.game-info-runner {
+    font-size: 50px;
+    color: var(--medium-blue);
+    text-shadow: 3px 3px 0 var(--light-blue);
+
+    position: absolute;
+    width: 875px;
+    height: 50px;
+    line-height: 50px;
+    left: 20px;
+    top: 120px;
+    text-align: right;
+}
+.game-info-pronouns {
+    font-size: 25px;
+    color: var(--blue);
+
+    position: absolute;
+    width: 875px;
+    height: 30px;
+    line-height: 30px;
+    left: 20px;
+    top: 170px;
+    text-align: right;
+}
+
+.host-container {
+    position: fixed;
+    width: 316px;
+    height: 67px;
+}
+
+.host-name {
+    font-size: 35px;
+    color: var(--medium-blue);
+    text-shadow: 3px 3px 0 var(--light-blue);
+
+    position: absolute;
+    width: 266px;
+    height: 42px;
+    line-height: 42px;
+    left: 50px;
+    top: 0px;
+}
+.host-pronouns {
+    font-size: 20px;
+    color: var(--blue);
+
+    position: absolute;
+    width: 266px;
+    height: 25px;
+    line-height: 25px;
+    left: 50px;
+    top: 42px;
+}
