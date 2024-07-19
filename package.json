@@ -20,6 +20,10 @@
   ],
   "nodecg": {
     "compatibleRange": "^2.0.0",
+    "bundleDependencies": {
+        "nodecg-tiltify": "^1.0.0",
+        "nodecg-speedcontrol": "^1.0.0"
+    },
     "dashboardPanels": [
       {
         "name": "commentary-control",
