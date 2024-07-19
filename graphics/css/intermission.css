@@ -18,7 +18,7 @@
 
 .game-info-game {
     font-size: 60px;
-    color: var(--blue);
+    color: var(--light-blue);
     text-shadow: 3px 3px 0 var(--medium-blue);
 
     position: absolute;

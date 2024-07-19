@@ -58,10 +58,9 @@
     position: absolute;
     width: 692px;
     height: 175px;
-    line-height: 175px;
+    line-height: 75px;
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 #game-secondary-info {
     color: var(--light-pink);
