@@ -48,10 +48,25 @@ $(() => {
         if (newVal) {
             comm1NameElement.html(newVal.comm1Name);
             comm1PronounsElement.html(newVal.comm1Pronouns.toUpperCase());
+            if (newVal.comm1Name === '')
+                document.getElementById('comm1-box').style.display = 'none';
+            else
+                document.getElementById('comm1-box').style.display = 'block';
+
             comm2NameElement.html(newVal.comm2Name);
             comm2PronounsElement.html(newVal.comm2Pronouns.toUpperCase());
+            if (newVal.comm2Name === '')
+                document.getElementById('comm2-box').style.display = 'none';
+            else
+                document.getElementById('comm2-box').style.display = 'block';
+
             comm3NameElement.html(newVal.comm3Name);
             comm3PronounsElement.html(newVal.comm3Pronouns.toUpperCase());
+            if (newVal.comm3Name === '')
+                document.getElementById('comm3-box').style.display = 'none';
+            else
+                document.getElementById('comm3-box').style.display = 'block';
+
             hostNameElement.html(newVal.hostName);
             hostPronounsElement.html(newVal.hostPronouns.toUpperCase());
         }
