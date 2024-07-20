@@ -6,8 +6,10 @@ const gameNameElement = $('#game-name');
 const categoryElement = $('#game-category');
 const platformElement = $('#game-platform');
 const estimateElement = $('#game-estimate');
-const runnerNameElement = $('#player1');
-const runnerPronounsElement = $('#player1-pronouns');
+const runner1NameElement = $('#player1');
+const runner1PronounsElement = $('#player1-pronouns');
+const runner2NameElement = $('#player2');
+const runner2PronounsElement = $('#player2-pronouns');
 const comm1NameElement = $('#comm1');
 const comm1PronounsElement = $('#comm1-pronouns');
 const comm2NameElement = $('#comm2');
@@ -38,14 +40,19 @@ $(() => {
 		estimateElement.html(runData.estimate);
 
         // Runner information
-        runnerNameElement.html(runData.teams[0].players.map((player) => player.name).join(', '));
-        runnerPronounsElement.html(runData.teams[0].players.map((player) => player.pronouns).join(', '));
+        runner1NameElement.html(runData.teams[0].players.map((player) => player.name).join(', '));
+        runner1PronounsElement.html(runData.teams[0].players.map((player) => player.pronouns).join(', '));
+        runner2NameElement.html(runData.teams[1].players.map((player) => player.name).join(', '));
+        runner2PronounsElement.html(runData.teams[1].players.map((player) => player.pronouns).join(', '));
 	}
 
     // Update commentary
     const commentaryRep = nodecg.Replicant('commentary');
     commentaryRep.on('change', (newVal) => {
         if (newVal) {
+            hostNameElement.html(newVal.hostName);
+            hostPronounsElement.html(newVal.hostPronouns.toUpperCase());
+            
             comm1NameElement.html(newVal.comm1Name);
             comm1PronounsElement.html(newVal.comm1Pronouns.toUpperCase());
             if (newVal.comm1Name === '')
@@ -66,9 +73,6 @@ $(() => {
                 document.getElementById('comm3-box').style.display = 'none';
             else
                 document.getElementById('comm3-box').style.display = 'block';
-
-            hostNameElement.html(newVal.hostName);
-            hostPronounsElement.html(newVal.hostPronouns.toUpperCase());
         }
     });
 

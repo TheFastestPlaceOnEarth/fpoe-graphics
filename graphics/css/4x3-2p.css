@@ -1,0 +1,141 @@
+/* Player Container */
+.player-container {
+    position: fixed;
+    width: 258px;
+    height: 30px;
+}
+.player-name {
+    font-size: 30px;
+    color: var(--dark-pink);
+    text-shadow: 3px 3px 0 var(--light-pink);
+
+    position: absolute;
+    width: 175px;
+    height: 30px;
+    line-height: 30px;
+    left: 0px;
+    top: 0px;
+}
+.player-pronouns {
+    font-size: 15px;
+    color: var(--medium-blue);
+
+    position: absolute;
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+    left: 175px;
+    top: 0px;
+
+    text-align: right;
+}
+
+/* Commentary Information */
+.commentary-container {
+    position: fixed;
+    width: 316px;
+    height: 89px;
+}
+.commentary-name {
+    font-size: 40px;
+    color: var(--blue);
+    text-shadow: 3px 3px 0 var(--light-blue);
+
+    position: absolute;
+    width: 266px;
+    height: 40px;
+    line-height: 40px;
+    left: 50px;
+    top: 22px;
+}
+.commentary-pronouns {
+    font-size: 20px;
+    color: var(--medium-blue);
+
+    position: absolute;
+    width: 266px;
+    height: 27px;
+    line-height: 27px;
+    left: 50px;
+    top: 62px;
+}
+
+/* Run Information */
+.run-info-container {
+    position: fixed;
+    width: 1178px;
+    height: 153px;
+    left: 370px;
+    top: 0px;
+}
+#game-name {
+    font-size: 75px;
+    color: var(--light-blue);
+    text-shadow: 5px 5px 0 var(--dark-pink);
+
+    position: absolute;
+    width: 1178px;
+    height: 102px;
+    line-height: 102px;
+    left: 0px;
+    top: 0px;
+
+    margin: auto;
+    text-align: center;
+}
+#game-secondary-info {
+    font-size: 30px;
+    color: var(--light-pink);
+    text-shadow: 3px 3px 0 var(--blue);
+
+    position: absolute;
+    width: 1178px;
+    height: 51px;
+    line-height: 51px;
+    left: 0px;
+    top: 102px;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Timer */
+.timer-container {
+    position: fixed;
+    width: 391px;
+    height: 155px;
+    left: 1512px;
+    top: 902px;
+}
+#timer {
+    font-size: 85px;
+    color: var(--blue);
+    text-shadow: 5px 5px 0 var(--dark-pink);
+
+    position: absolute;
+    width: 391px;
+    height: 105px;
+    line-height: 105px;
+    left: 0px;
+    top: 0px;
+
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+#timer-secondary-info {
+    font-size: 30px;
+
+    position: absolute;
+    width: 391px;
+    height: 50px;
+    line-height: 50px;
+    left: 0px;
+    top: 105px;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
