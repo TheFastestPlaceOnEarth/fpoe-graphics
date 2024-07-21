@@ -67,7 +67,7 @@ function refreshNextRunsData(currentRun) {
         let onDeckPronounsElement = $('#on-deck-pronouns-' + (i + 1));
         onDeckGameElement.html(run.game);
         onDeckCategoryElement.html(run.category);
-        onDeckEstimateElement.html(run.estimate);
+        onDeckEstimateElement.html(`${run.estimate} ESTIMATE`);
         onDeckRunnerElement.html(run.teams[0].players.map((player) => player.name).join(', '));
         onDeckPronounsElement.html(run.teams[0].players.map((player) => player.pronouns).join(', '));
 

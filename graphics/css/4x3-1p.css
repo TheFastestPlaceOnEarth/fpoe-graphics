@@ -50,7 +50,7 @@
 }
 
 /* Game Information */
-#game-name {
+#game-name-container {
     color: var(--light-blue);
     text-shadow: 5px 5px 0 var(--dark-pink);
     font-size: 75px;
@@ -60,7 +60,9 @@
     height: 175px;
     line-height: 75px;
 
-    text-align: center;
+    display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #game-secondary-info {
     color: var(--light-pink);
