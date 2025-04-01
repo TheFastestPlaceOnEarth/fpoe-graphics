@@ -20,6 +20,9 @@
   ],
   "nodecg": {
     "compatibleRange": "^2.0.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.0.0"
+    },
     "dashboardPanels": [
       {
         "name": "commentary-control",
@@ -75,5 +78,8 @@
       "last 1 safari version"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nodecg": "^2.5.3"
+  }
 }
